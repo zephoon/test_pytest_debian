@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        /usr/local/bin/docker { image 'dpython:latest' }
+        docker { image 'dpython:latest' }
     }
     stages {
         stage('Test') {
