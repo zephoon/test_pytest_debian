@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker { 
-            image 'dpython:latest' 
+            image 'dpython:0.0.1' 
         }
     }
     stages {
