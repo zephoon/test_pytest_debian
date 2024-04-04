@@ -10,7 +10,7 @@ pipeline {
                 sh """
                 python3 --version
                 cd ${workspace}
-                venv ${workspace}/env
+                python3 -m venv ${workspace}/env
                 . env/bin/activate
                 pip install -r requirements.txt --break-system-packages
                 pytest
