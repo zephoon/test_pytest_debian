@@ -13,7 +13,7 @@ pipeline {
                 python3 -m venv ${workspace}/env
                 . env/bin/activate
                 pip install -r requirements.txt --break-system-packages
-                pytest
+                pytest --cov=. tests/ --cov-report xml
                 """
             }
         }
