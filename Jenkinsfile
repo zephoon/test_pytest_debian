@@ -1,6 +1,9 @@
 pipeline {
     agent {
-        docker { image 'dpython:latest' }
+        docker { 
+            label 'docker'
+            image 'dpython:latest' 
+        }
     }
     stages {
         stage('Test') {
