@@ -1,5 +1,5 @@
-import pandas
-import pyodbc
+# import pandas
+# import pyodbc
 
 def inc(x):
     return x + 1
